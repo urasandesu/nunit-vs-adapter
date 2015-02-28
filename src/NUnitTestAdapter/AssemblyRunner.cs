@@ -23,7 +23,7 @@ namespace NUnit.VisualStudio.TestAdapter
     /// </summary>
     public class AssemblyRunner : IDisposable
     {
-        private readonly TestRunner runner = new TestDomain();
+        private readonly TestRunner runner = new RemoteTestRunner();
         private readonly TestLogger logger;
         private readonly string assemblyName;
 
